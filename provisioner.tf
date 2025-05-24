@@ -15,7 +15,7 @@ resource "null_resource" "provision_enable_check"{
     connection {
         type   = "ssh"
         user = "ec2-user"
-        private_key = file("../../practice-instance-kpair.pem")
+        #private_key = file("../../practice-instance-kpair.pem")
         host = aws_instance.demo_instance[count.index].public_ip
     }
     }
