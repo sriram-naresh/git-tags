@@ -45,7 +45,7 @@ variable "aws_instance_type" {
     description = "value of the AWS instance type"
     type       = map(string)
     default = {
-        dev  =   "t2.micro"
+        dev  =   "x5.large"
         stage  =  "t3.medium"
         prod   =  "t3.large"
     }
